@@ -10,7 +10,9 @@ function handleSubmit(event) {
     paintGreeting(currentValue);
     switchHideState(form);
     setTimeout(function() {
-        switchContentState();
+        switchHideState(clockContainer);
+        switchHideState(greeting);
+        switchHideState(toDoForm);
     }, 1200);
 }
 

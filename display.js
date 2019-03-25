@@ -19,12 +19,6 @@ function switchHideClass(element) {
   }
 }
 
-function switchContentState() {
-  switchHideClass(clockContainer);
-  switchHideClass(greeting);
-  switchHideClass(toDoForm);
-}
-
 function switchHideState(element) {
   if (element.classList.contains(CN_HIDE)) {
     element.classList.remove(CN_HIDE);
@@ -34,8 +28,8 @@ function switchHideState(element) {
   } else {
     element.classList.add(CN_VISUALLY_HIDE);
 
-    if (getTransitioned(form)) {
-      form.addEventListener('transitionend', function(event) {
+    if (getTransitioned(element)) {
+      element.addEventListener('transitionend', function() {
         element.classList.add(CN_HIDE);
       });
     }
@@ -43,7 +37,9 @@ function switchHideState(element) {
 }
 
 function init() {
-  switchContentState();
+  switchHideClass(clockContainer);
+  switchHideClass(greeting);
+  switchHideClass(toDoForm);
 }
 
 init();
