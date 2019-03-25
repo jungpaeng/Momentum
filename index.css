@@ -6,13 +6,21 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Nanum Gothic', sans-serif;
-    background: url(https://source.unsplash.com/random/1600x900);
+    background: url(https://source.unsplash.com/1600x900);
     background-size:cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1)
 }
 
 .clock {
@@ -95,6 +103,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .to-do-list li button {
     margin-right: 10px;
+}
+
+.weather {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px 20px;
+    color: white;
+    font-size: 12px;
+}
+
+.weather > :first-child {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .hide {

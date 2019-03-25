@@ -10,20 +10,22 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div class="js-clock clock transition">
-    <h1>00:00</h1>
+  <div class="content">
+    <div class="js-clock clock transition">
+      <h1>00:00</h1>
+    </div>
+    <form class="js-form form transition">
+      <span>Hello, what's your name?</span>
+      <input type="text" />
+    </form>
+    <h4 class="js-greetings greetings transition"></h4>
+    <form class="js-toDoForm to-do-form transition">
+      <span>What is your main focus for today?</span>
+      <input type="text" />
+    </form>
+    <ul class="js-toDoList to-do-list"></ul>
   </div>
-  <form class="js-form form transition">
-    <span>Hello, what's your name?</span>
-    <input type="text" />
-  </form>
-  <h4 class="js-greetings greetings transition"></h4>
-  <form class="js-toDoForm to-do-form transition">
-    <span>What is your main focus for today?</span>
-    <input type="text" />
-  </form>
-  <ul class="js-toDoList to-do-list"></ul>
-  <span class="js-weather"></span>
+  <div class="js-weather weather"></div>
   <script src="constant.js"></script>
   <script src="display.js"></script>
   <script src="clock.js"></script>
