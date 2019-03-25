@@ -1,5 +1,3 @@
-const LS_USER = "currentUser";
-
 function saveName(text) {
     localStorage.setItem(LS_USER, text);
 }
@@ -10,6 +8,10 @@ function handleSubmit(event) {
 
     saveName(currentValue);
     paintGreeting(currentValue);
+    switchHideState(form);
+    setTimeout(function() {
+        switchContentState();
+    }, 1200);
 }
 
 function askName() {
@@ -27,6 +29,10 @@ function loadName() {
         askName();
     } else {
         paintGreeting(currentUser);
+        switchHideClass(form);
+        switchHideClass(clockContainer);
+        switchHideClass(greeting);
+        switchHideClass(toDoForm);
     }
 }
 

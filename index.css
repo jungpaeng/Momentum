@@ -16,6 +16,10 @@ body {
     align-items: center;
 }
 
+.transition {
+    transition: all 1s linear;
+}
+
 .form span {
     font-size: 40px;
     font-weight: 600;
@@ -39,4 +43,8 @@ body {
 
 .hide {
     display: none;
+}
+
+.visually_hide {
+    opacity: 0;
 }

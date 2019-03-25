@@ -10,3 +10,6 @@ const form = document.querySelector('.js-form');
 const input = form.querySelector('input');
 
 const CN_HIDE = "hide";
+const CN_VISUALLY_HIDE = "visually_hide";
+
+const LS_USER = "currentUser";
